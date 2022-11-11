@@ -23,6 +23,7 @@ form.addEventListener('submit', function (event) {
     event.preventDefault()
     if (validateEmail(login.value) && validatePassword(password.value)) {
         document.location.href = "../index.html"
+        console.log('OK')
     } else {
         if (!validateEmail(login.value)) {
             error = document.createElement('div')
